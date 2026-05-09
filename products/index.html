@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — PT Karya Energi Indonesia</title>
+  <meta name="description" content="Produk industrial: IMI CCI, Emerson, Honeywell Combustion, Baker Hughes, Tsurumi Pump, Ecom, Gesotec, Howden, dan Jeongwoo.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .product-section { padding: 4rem 0; border-bottom: 1px solid var(--gray-200); }
+    .product-section:last-child { border-bottom: none; }
+    .brand-tag { display:inline-flex;align-items:center;gap:0.4rem;background:rgba(30,77,140,0.08);border:1px solid rgba(30,77,140,0.15);border-radius:100px;padding:0.3rem 0.8rem;font-size:0.72rem;font-weight:600;color:var(--steel);letter-spacing:0.06em;text-transform:uppercase; }
+    .product-item { padding:1.25rem;border:1px solid var(--gray-200);border-radius:12px;transition:border-color 0.2s,box-shadow 0.2s; }
+    .product-item:hover { border-color:rgba(30,77,140,0.25);box-shadow:var(--shadow-md); }
+    .product-item-title { font-weight:600;font-size:0.9rem;color:var(--navy);margin-bottom:0.3rem; }
+    .product-item-body { font-size:0.8rem;color:var(--gray-600);line-height:1.6; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-logo" aria-label="PT Karya Energi Indonesia">
+        <div class="logo-mark">KE</div>
+        <div class="logo-text">
+          <span class="logo-text-main">Karya Energi</span>
+          <span class="logo-text-sub">Indonesia</span>
+        </div>
+      </a>
+      <ul class="navbar-nav" role="list">
+        <li><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/about/">About Us</a><div class="dropdown"><a href="/about/#overview">Company Overview</a><a href="/about/#commitment">Commitment</a><a href="/about/#industries">Industries</a></div></li>
+        <li class="nav-item">
+          <a href="/products/" class="active">Products</a>
+          <div class="dropdown">
+            <a href="#instrumentation">Instrumentation</a>
+            <a href="#burners">Burners & Combustion</a>
+            <a href="#pumps">Pumps</a>
+            <a href="#analyzers">Gas Analyzers</a>
+            <a href="#industrial">Industrial Equipment</a>
+          </div>
+        </li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/clients/">Clients</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="/contact/" class="navbar-cta">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Get In Touch
+      </a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-nav"><a href="/">Home</a><a href="/about/">About Us</a><a href="/products/">Products</a><a href="/services/">Services</a><a href="/clients/">Clients</a><a href="/contact/">Contact</a><a href="/contact/" class="mobile-cta">Get In Touch →</a></div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      <span>Products</span>
+    </div>
+    <div class="page-hero-label">Produk Kami</div>
+    <h1>Solusi dari Brand<br>Terkemuka Dunia</h1>
+    <p>Kami adalah agen dan distributor resmi untuk brand-brand industrial terdepan — menyediakan solusi instrumentasi, pembakaran, dan peralatan industri berkualitas tinggi.</p>
+  </section>
+
+  <!-- QUICK NAV -->
+  <div style="background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:1rem 0;position:sticky;top:72px;z-index:100;">
+    <div style="max-width:1280px;margin:0 auto;padding:0 2rem;display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;">
+      <a href="#instrumentation" style="font-size:0.78rem;font-weight:600;color:var(--navy);text-decoration:none;padding:0.4rem 1rem;border-radius:100px;border:1px solid var(--gray-200);transition:all 0.2s;" onmouseover="this.style.background='var(--navy)';this.style.color='white';this.style.borderColor='var(--navy)'" onmouseout="this.style.background='';this.style.color='var(--navy)';this.style.borderColor='var(--gray-200)'">Instrumentation</a>
+      <a href="#burners" style="font-size:0.78rem;font-weight:600;color:var(--navy);text-decoration:none;padding:0.4rem 1rem;border-radius:100px;border:1px solid var(--gray-200);transition:all 0.2s;" onmouseover="this.style.background='var(--navy)';this.style.color='white';this.style.borderColor='var(--navy)'" onmouseout="this.style.background='';this.style.color='var(--navy)';this.style.borderColor='var(--gray-200)'">Burners & Combustion</a>
+      <a href="#pumps" style="font-size:0.78rem;font-weight:600;color:var(--navy);text-decoration:none;padding:0.4rem 1rem;border-radius:100px;border:1px solid var(--gray-200);transition:all 0.2s;" onmouseover="this.style.background='var(--navy)';this.style.color='white';this.style.borderColor='var(--navy)'" onmouseout="this.style.background='';this.style.color='var(--navy)';this.style.borderColor='var(--gray-200)'">Pumps</a>
+      <a href="#analyzers" style="font-size:0.78rem;font-weight:600;color:var(--navy);text-decoration:none;padding:0.4rem 1rem;border-radius:100px;border:1px solid var(--gray-200);transition:all 0.2s;" onmouseover="this.style.background='var(--navy)';this.style.color='white';this.style.borderColor='var(--navy)'" onmouseout="this.style.background='';this.style.color='var(--navy)';this.style.borderColor='var(--gray-200)'">Gas Analyzers</a>
+      <a href="#industrial" style="font-size:0.78rem;font-weight:600;color:var(--navy);text-decoration:none;padding:0.4rem 1rem;border-radius:100px;border:1px solid var(--gray-200);transition:all 0.2s;" onmouseover="this.style.background='var(--navy)';this.style.color='white';this.style.borderColor='var(--navy)'" onmouseout="this.style.background='';this.style.color='var(--navy)';this.style.borderColor='var(--gray-200)'">Industrial Equipment</a>
+    </div>
+  </div>
+
+  <div style="max-width:1280px;margin:0 auto;padding:0 2rem;">
+
+    <!-- INSTRUMENTATION -->
+    <section class="product-section" id="instrumentation" aria-labelledby="instr-heading">
+      <div data-reveal>
+        <div class="section-label">Industrial Process Instrumentation</div>
+        <h2 class="section-title" id="instr-heading" style="margin-bottom:0.5rem;">Emerson Automation Solutions</h2>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <span class="brand-tag">Emerson</span>
+          <span class="brand-tag">Flow Measurement</span>
+          <span class="brand-tag">Pressure</span>
+          <span class="brand-tag">Temperature</span>
+          <span class="brand-tag">Analysis</span>
+        </div>
+        <p class="section-desc" style="margin-bottom:2rem;">Solusi otomasi dan instrumentasi proses industri komprehensif dari Emerson — salah satu pemimpin global dalam teknologi pengukuran dan kontrol.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;" class="responsive-grid" data-reveal data-delay="80">
+        <style>.responsive-grid{} @media(max-width:768px){.responsive-grid{grid-template-columns:1fr!important;}}</style>
+        <div class="product-item"><div class="product-item-title">Flow Measurement</div><div class="product-item-body">Flowmeter untuk liquid, gas, dan steam — Coriolis, electromagnetic, vortex, differential pressure.</div></div>
+        <div class="product-item"><div class="product-item-title">Pressure Measurement</div><div class="product-item-body">Transmitter tekanan untuk berbagai range dan aplikasi proses industri dengan akurasi tinggi.</div></div>
+        <div class="product-item"><div class="product-item-title">Temperature Measurement</div><div class="product-item-body">Thermocouple, RTD, temperature transmitter untuk monitoring suhu proses.</div></div>
+        <div class="product-item"><div class="product-item-title">Level Measurement</div><div class="product-item-body">Guided wave radar, ultrasonic, displacer — solusi level untuk tank dan vessel.</div></div>
+        <div class="product-item"><div class="product-item-title">Control Valves</div><div class="product-item-body">Valve control untuk regulasi aliran proses industri dengan aktuator pneumatik dan elektrik.</div></div>
+        <div class="product-item"><div class="product-item-title">Process Analysis</div><div class="product-item-body">Analyzer inline dan extractive untuk monitoring kualitas proses secara real-time.</div></div>
+      </div>
+
+      <div style="margin-top:3rem;" data-reveal>
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:1.4rem;color:var(--navy);margin-bottom:0.5rem;">IMI CCI</h3>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <span class="brand-tag">IMI CCI</span>
+          <span class="brand-tag">Boiler</span>
+          <span class="brand-tag">Combined Cycle</span>
+          <span class="brand-tag">Power</span>
+        </div>
+        <p class="section-desc" style="margin-bottom:1.5rem;">Solusi kontrol untuk pembangkit tenaga listrik — boiler, combined heat &amp; power, dan combined cycle plants.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;" class="responsive-grid">
+          <div class="product-item"><div class="product-item-title">Boiler Control Valves</div><div class="product-item-body">Valve khusus boiler dengan rating tekanan dan suhu tinggi untuk aplikasi steam power plant.</div></div>
+          <div class="product-item"><div class="product-item-title">Combined Heat & Power</div><div class="product-item-body">Solusi kontrol untuk sistem CHP — efisiensi tinggi, keandalan operasional terjamin.</div></div>
+          <div class="product-item"><div class="product-item-title">Combined Cycle Plants</div><div class="product-item-body">Sistem kontrol terintegrasi untuk pembangkit listrik combined cycle gas turbine (CCGT).</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BURNERS -->
+    <section class="product-section" id="burners" aria-labelledby="burners-heading">
+      <div data-reveal>
+        <div class="section-label">Burners & Combustion Equipment</div>
+        <h2 class="section-title" id="burners-heading">Honeywell Combustion</h2>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <span class="brand-tag">Honeywell</span>
+          <span class="brand-tag">Maxon</span>
+          <span class="brand-tag">Eclipse</span>
+          <span class="brand-tag">Kromschroeder</span>
+          <span class="brand-tag">Hauck</span>
+        </div>
+        <p class="section-desc" style="margin-bottom:2rem;">Empat brand terkemuka dalam satu payung — solusi burner dan combustion equipment industrial untuk semua jenis aplikasi pembakaran industri.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;" class="responsive-grid2" data-reveal data-delay="80">
+        <style>.responsive-grid2{} @media(max-width:768px){.responsive-grid2{grid-template-columns:1fr!important;}}</style>
+        <div class="card" style="display:flex;gap:1.25rem;align-items:flex-start;">
+          <div class="card-icon card-icon-amber" style="flex-shrink:0;margin-bottom:0;width:44px;height:44px;">
+            <svg width="20" height="20" fill="none" stroke="#F59E0B" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/><path d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/></svg>
+          </div>
+          <div>
+            <div class="card-title">Maxon Burners</div>
+            <div class="card-body">Industrial burner terkemuka untuk kiln, dryer, furnace, dan oven industri. Efisiensi tinggi, emisi rendah, combustion kontrol presisi.</div>
+          </div>
+        </div>
+        <div class="card" style="display:flex;gap:1.25rem;align-items:flex-start;">
+          <div class="card-icon card-icon-amber" style="flex-shrink:0;margin-bottom:0;width:44px;height:44px;">
+            <svg width="20" height="20" fill="none" stroke="#F59E0B" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12"/></svg>
+          </div>
+          <div>
+            <div class="card-title">Eclipse Combustion</div>
+            <div class="card-body">Solusi combustion untuk pemanas strip, furnace, dan aplikasi infrared. Sistem modular yang fleksibel dan andal.</div>
+          </div>
+        </div>
+        <div class="card" style="display:flex;gap:1.25rem;align-items:flex-start;">
+          <div class="card-icon card-icon-steel" style="flex-shrink:0;margin-bottom:0;width:44px;height:44px;">
+            <svg width="20" height="20" fill="none" stroke="#1E4D8C" stroke-width="2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18"/></svg>
+          </div>
+          <div>
+            <div class="card-title">Kromschroeder</div>
+            <div class="card-body">Komponen gas combustion: burner, valve, igniter, dan flame detector untuk industri keramik, kaca, logam, dan kimia.</div>
+          </div>
+        </div>
+        <div class="card" style="display:flex;gap:1.25rem;align-items:flex-start;">
+          <div class="card-icon card-icon-steel" style="flex-shrink:0;margin-bottom:0;width:44px;height:44px;">
+            <svg width="20" height="20" fill="none" stroke="#1E4D8C" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2"/></svg>
+          </div>
+          <div>
+            <div class="card-title">Hauck Burners</div>
+            <div class="card-body">Burner dan combustion system untuk industri steel, non-ferrous, petrochemical, dan power generation.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2.5rem;" data-reveal>
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:1.4rem;color:var(--navy);margin-bottom:0.5rem;">Howden</h3>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+          <span class="brand-tag">Howden</span>
+          <span class="brand-tag">Industrial Fans</span>
+          <span class="brand-tag">Compressors</span>
+        </div>
+        <p class="section-desc">Howden adalah global leader dalam industrial fans, compressors, dan heat exchangers untuk proses industri berat — power, mining, dan oil &amp; gas.</p>
+      </div>
+    </section>
+
+    <!-- PUMPS -->
+    <section class="product-section" id="pumps" aria-labelledby="pumps-heading">
+      <div data-reveal>
+        <div class="section-label">Pumps</div>
+        <h2 class="section-title" id="pumps-heading">Tsurumi Pump</h2>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <span class="brand-tag">Tsurumi</span>
+          <span class="brand-tag">Vacuum Pump</span>
+          <span class="brand-tag">Centrifugal</span>
+          <span class="brand-tag">Submersible</span>
+        </div>
+        <p class="section-desc" style="margin-bottom:2rem;">Tsurumi adalah brand pump Jepang terkemuka dengan reputasi keandalan tinggi untuk aplikasi dewatering, kimia, dan proses industri.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;" class="responsive-grid" data-reveal data-delay="80">
+        <div class="product-item"><div class="product-item-title">Vacuum Pump</div><div class="product-item-body">Pompa vakum untuk proses degassing, evaporasi, dan aplikasi tekanan negatif industri.</div></div>
+        <div class="product-item"><div class="product-item-title">Double Suction Volute Pump</div><div class="product-item-body">Pompa sentrifugal double suction untuk kapasitas besar — water supply, irrigation, dan industri.</div></div>
+        <div class="product-item"><div class="product-item-title">Submersible Pump</div><div class="product-item-body">Pompa submersible untuk dewatering, sewage, dan transfer fluida di lingkungan basah.</div></div>
+        <div class="product-item"><div class="product-item-title">Chemical Pump</div><div class="product-item-body">Pompa tahan korosi untuk transfer cairan kimia agresif di industri kimia dan petrokimia.</div></div>
+        <div class="product-item"><div class="product-item-title">Slurry Pump</div><div class="product-item-body">Pompa untuk transfer slurry dan fluida berpartikel di industri mining dan wastewater.</div></div>
+        <div class="product-item"><div class="product-item-title">Drainage Pump</div><div class="product-item-body">Pompa drainage portable dan stasioner untuk konstruksi, tambang, dan pengolahan air.</div></div>
+      </div>
+    </section>
+
+    <!-- GAS ANALYZERS -->
+    <section class="product-section" id="analyzers" aria-labelledby="analyzer-heading">
+      <div data-reveal>
+        <div class="section-label">Gas Analyzers & Measurement</div>
+        <h2 class="section-title" id="analyzer-heading">Baker Hughes M&S</h2>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <span class="brand-tag">Baker Hughes</span>
+          <span class="brand-tag">Moisture Sensors</span>
+          <span class="brand-tag">Gas Analysis</span>
+          <span class="brand-tag">Pressure Testing</span>
+        </div>
+        <p class="section-desc" style="margin-bottom:2rem;">Baker Hughes Measurement &amp; Sensing — solusi pengukuran presisi untuk industri oil &amp; gas, power, dan proses industri.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;" class="responsive-grid" data-reveal data-delay="80">
+        <div class="product-item"><div class="product-item-title">Pressure Testing Equipment</div><div class="product-item-body">Peralatan pengujian tekanan untuk commissioning, maintenance, dan quality control sistem perpipaan.</div></div>
+        <div class="product-item"><div class="product-item-title">Moisture & Humidity Sensors</div><div class="product-item-body">Sensor kelembaban presisi tinggi untuk monitoring gas alam, udara tekan, dan proses industri.</div></div>
+        <div class="product-item"><div class="product-item-title">Gas Analyzers</div><div class="product-item-body">Analyzer gas untuk komposisi, kalori, dan kualitas gas alam serta gas proses industri.</div></div>
+        <div class="product-item"><div class="product-item-title">Dew Point Measurement</div><div class="product-item-body">Pengukuran dew point untuk gas pipeline, compressed air, dan proses kriogenik.</div></div>
+        <div class="product-item"><div class="product-item-title">Process Gas Chromatography</div><div class="product-item-body">Kromatografi gas proses untuk analisis komposisi secara kontinyu dan otomatis.</div></div>
+        <div class="product-item"><div class="product-item-title">Ultrasonic Flow Meters</div><div class="product-item-body">Pengukuran aliran gas presisi tinggi menggunakan teknologi ultrasonik untuk custody transfer.</div></div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIAL EQUIPMENT -->
+    <section class="product-section" id="industrial" aria-labelledby="industrial-heading" style="border-bottom:none;">
+      <div data-reveal>
+        <div class="section-label">Industrial Equipment & Monitoring</div>
+        <h2 class="section-title" id="industrial-heading">Ecom, Gesotec & Jeongwoo</h2>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <span class="brand-tag">Ecom</span>
+          <span class="brand-tag">Gesotec</span>
+          <span class="brand-tag">Jeongwoo</span>
+          <span class="brand-tag">Thermal Imaging</span>
+          <span class="brand-tag">Flue Gas</span>
+        </div>
+        <p class="section-desc" style="margin-bottom:2rem;">Solusi monitoring dan measurement untuk kiln, cooler, dan sistem industri — dari flue gas analysis hingga thermal imaging.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;" class="responsive-grid" data-reveal data-delay="80">
+        <div class="product-item"><div class="product-item-title">Flue Gas Analyzers (Ecom)</div><div class="product-item-body">Analisis gas buang untuk optimasi pembakaran dan kepatuhan emisi — O₂, CO, NOx, SO₂.</div></div>
+        <div class="product-item"><div class="product-item-title">Pressure Measurement (Ecom)</div><div class="product-item-body">Alat ukur tekanan portable dan stasioner untuk commissioning dan maintenance.</div></div>
+        <div class="product-item"><div class="product-item-title">Gas Detection (Ecom)</div><div class="product-item-body">Detektor gas personal dan stasioner untuk keselamatan kerja di lingkungan industri berbahaya.</div></div>
+        <div class="product-item"><div class="product-item-title">Infrared Temperature (Ecom)</div><div class="product-item-body">Termometer infrared untuk pengukuran suhu non-kontak pada surface proses dan peralatan.</div></div>
+        <div class="product-item"><div class="product-item-title">Industrial Thermal Imagers (Gesotec)</div><div class="product-item-body">Sistem thermal imaging untuk kiln &amp; cooler — monitoring distribusi suhu real-time secara visual.</div></div>
+        <div class="product-item"><div class="product-item-title">Kiln & Cooler Systems (Gesotec)</div><div class="product-item-body">Solusi monitoring kiln dan cooler terintegrasi untuk industri semen, kapur, dan mineral.</div></div>
+        <div class="product-item"><div class="product-item-title">Industrial Machinery (Jeongwoo)</div><div class="product-item-body">Mesin dan peralatan industri dari Jeongwoo Industrial Machinery Korea untuk berbagai aplikasi.</div></div>
+        <div class="product-item"><div class="product-item-title">Distance Meters (Ecom)</div><div class="product-item-body">Alat ukur jarak laser untuk aplikasi konstruksi, maintenance, dan survey industrial.</div></div>
+        <div class="product-item"><div class="product-item-title">Humidity Measurement (Ecom)</div><div class="product-item-body">Sensor dan meter kelembaban udara untuk monitoring lingkungan produksi dan penyimpanan.</div></div>
+      </div>
+    </section>
+
+  </div><!-- /max-width wrapper -->
+
+  <!-- CTA -->
+  <section style="background:linear-gradient(135deg,var(--amber) 0%,var(--amber-dark) 100%);padding:var(--s6) 0;margin-top:var(--s5);">
+    <div style="max-width:1280px;margin:0 auto;padding:0 var(--s4);display:flex;align-items:center;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;">
+      <div data-reveal>
+        <h2 style="font-family:var(--font-display);font-weight:800;font-size:clamp(1.6rem,3vw,2.5rem);color:var(--navy);letter-spacing:-0.01em;margin-bottom:0.5rem;">Butuh Penawaran Produk?</h2>
+        <p style="color:rgba(10,22,40,0.7);font-size:1rem;line-height:1.6;">Hubungi tim sales kami untuk spesifikasi, ketersediaan, dan penawaran harga terbaik.</p>
+      </div>
+      <a href="/contact/" style="display:inline-flex;align-items:center;gap:0.6rem;padding:1rem 2.5rem;background:var(--navy);color:white;font-weight:700;font-size:0.9rem;letter-spacing:0.06em;text-transform:uppercase;border-radius:8px;text-decoration:none;box-shadow:0 4px 20px rgba(10,22,40,0.3);transition:transform 0.2s,box-shadow 0.2s;"
+         onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(10,22,40,0.4)'"
+         onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(10,22,40,0.3)'">
+        Request Penawaran <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="/" class="navbar-logo" style="margin-bottom:1rem;display:inline-flex;"><div class="logo-mark">KE</div><div class="logo-text"><span class="logo-text-main">Karya Energi</span><span class="logo-text-sub">Indonesia</span></div></a>
+          <p class="footer-brand-desc">Be Professional Partner For Your Business. Distributor dan agen resmi solusi industrial sejak 2008.</p>
+        </div>
+        <div><div class="footer-col-title">Navigasi</div><ul class="footer-links"><li><a href="/">Home</a></li><li><a href="/about/">About Us</a></li><li><a href="/products/">Products</a></li><li><a href="/services/">Services</a></li><li><a href="/clients/">Clients</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+        <div><div class="footer-col-title">Produk</div><ul class="footer-links"><li><a href="#instrumentation">Instrumentation</a></li><li><a href="#burners">Burners & Combustion</a></li><li><a href="#pumps">Pumps</a></li><li><a href="#analyzers">Gas Analyzers</a></li><li><a href="#industrial">Industrial Equipment</a></li></ul></div>
+        <div><div class="footer-col-title">Kontak</div><div class="footer-contact-item"><div class="footer-contact-icon"><svg width="14" height="14" fill="none" stroke="#F59E0B" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg></div><div class="footer-contact-text"><strong>Alamat</strong>Surabaya, Jawa Timur, Indonesia</div></div><div class="footer-contact-item"><div class="footer-contact-icon"><svg width="14" height="14" fill="none" stroke="#F59E0B" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div class="footer-contact-text"><strong>Email</strong>info@karya-energi.com</div></div></div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom"><span>© 2024 PT Karya Energi Indonesia. All rights reserved.</span><span>Surabaya, Indonesia</span></div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
