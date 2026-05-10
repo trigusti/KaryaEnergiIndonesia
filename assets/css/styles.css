@@ -1082,6 +1082,10 @@ body {
     padding: 0 var(--s3);
     gap: var(--s3);
   }
+  .resp-cta-row a[href] {
+    width: fit-content !important;
+    align-self: flex-start;
+  }
 
   /* Industries grid in about page */
   .industries-grid { grid-template-columns: 1fr 1fr !important; }
