@@ -78,7 +78,7 @@
 
   <!-- OVERVIEW -->
   <section class="section" id="overview" aria-labelledby="overview-heading">
-    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:center;">
+    <div class="resp-2col-about">
       <div data-reveal>
         <div class="section-label">Company Overview</div>
         <h2 class="section-title" id="overview-heading">Siapa Kami</h2>
@@ -199,8 +199,8 @@
         <h2 class="section-title section-title-white" id="industries-heading">Industri yang Kami Layani</h2>
         <p class="section-desc section-desc-white" style="margin:0 auto;">PT Karya Energi Indonesia melayani lebih dari 14 sektor industri di seluruh Indonesia.</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;" class="industries-grid">
-        <style>.industries-grid { } @media(max-width:768px){.industries-grid{grid-template-columns:1fr 1fr !important;}}</style>
+      <div class="industries-grid">
+        <style>.industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;} @media(max-width:768px){.industries-grid{grid-template-columns:1fr 1fr !important;}} @media(max-width:480px){.industries-grid{grid-template-columns:1fr 1fr;}}</style>
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.5rem;display:flex;align-items:center;gap:0.75rem;" data-reveal data-delay="0">
           <div style="width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0;"></div>
           <span style="font-size:0.85rem;color:rgba(255,255,255,0.8);font-weight:500;">Oil &amp; Gas</span>
@@ -263,7 +263,7 @@
 
   <!-- CTA -->
   <section style="background:linear-gradient(135deg,var(--amber) 0%,var(--amber-dark) 100%);padding:var(--s6) 0;">
-    <div style="max-width:1280px;margin:0 auto;padding:0 var(--s4);display:flex;align-items:center;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;">
+    <div class="resp-cta-row">
       <div data-reveal>
         <h2 style="font-family:var(--font-display);font-weight:800;font-size:clamp(1.6rem,3vw,2.5rem);color:var(--navy);letter-spacing:-0.01em;margin-bottom:0.5rem;">Siap Berkolaborasi?</h2>
         <p style="color:rgba(10,22,40,0.7);font-size:1rem;line-height:1.6;">Hubungi tim kami untuk diskusi lebih lanjut tentang kebutuhan industrial Anda.</p>
